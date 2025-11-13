@@ -1,0 +1,88 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+
+# Platform-specific builds
+*.a
+*.so
+*.dylib
+*.dll
+*.lib
+
+# iOS/visionOS
+*.xcodeproj/
+*.xcworkspace/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+local.properties
+.gradle/
+build/
+.idea/
+
+# Unity/HoloLens
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+*.unitypackage
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# WebAssembly
+pkg/
+wasm-pack.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+config.toml
+!config.toml.example
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# OS specific
+Thumbs.db
+desktop.ini
+
+# FFI Generated
+*.h
+!src/ffi.h
+bindings/
+
