@@ -1,6 +1,21 @@
-# IronVault-XR
+# IronVault-XR - AR/VR Wallet
 
-An AR cryptocurrency wallet for smart glasses.
+> 🥽 Augmented reality cryptocurrency wallet for smart glasses
+
+---
+
+## 🌐 Iron Blockchain Wallet Ecosystem
+
+| # | Project | Description | Repository |
+|---|---------|-------------|------------|
+| 1️⃣ | **IronCore** | 🎯 钱包后端 - Backend API Server | [→ Visit](https://github.com/wejfiowej124234/IronCore) |
+| 2️⃣ | **IronForge** | 🌐 前端钱包 - Web Wallet | [→ Visit](https://github.com/wejfiowej124234/IronForge) |
+| 3️⃣ | **IronLink-DApp** | 📱 移动端 - Mobile DApp Wallet | [→ Visit](https://github.com/wejfiowej124234/IronLink-DApp) |
+| 4️⃣ | **IronGuard-AI** | 🤖 AI安全 - AI Security Layer | [→ Visit](https://github.com/wejfiowej124234/ironguard-ai) |
+| 5️⃣ | **IronVault-XR** | 🥽 智能眼镜 - AR/VR Wallet | 👉 **[You are here]** |
+| 6️⃣ | **Attack-Defense** | ⚔️ 攻防知识库 - Security Knowledge Base | [→ Visit](https://github.com/wejfiowej124234/Attack-Defense) |
+
+---
 
 ## Overview
 
@@ -12,17 +27,19 @@ Currently in planning phase. Architecture design in progress.
 
 ## Features (Planned)
 
-- QR code scanning for payment addresses
-- Voice command control
-- Biometric authentication (iris, face)
-- Spatial UI for transaction display
-- Integration with existing Rust backend via FFI
-- Offline transaction queuing
+- **QR Code Scanning**: Instant payment address recognition
+- **Voice Commands**: Hands-free transaction control
+- **Biometric Auth**: Iris and face recognition
+- **Spatial UI**: 3D transaction visualization
+- **Gesture Controls**: Intuitive hand-based navigation
+- **Offline Queue**: Transaction queuing when offline
+- **FFI Integration**: Reuses Rust core from [IronCore](https://github.com/wejfiowej124234/IronCore)
 
 ## Target Platforms
 
 - Apple Vision Pro (visionOS)
 - Microsoft HoloLens 2 (UWP)
+- Meta Quest 3 (Android AR)
 - Android AR devices (ARCore)
 - WebXR (browser-based)
 
@@ -34,16 +51,20 @@ Currently in planning phase. Architecture design in progress.
 └────────┬─────────┘
          │ FFI
 ┌────────┴─────────┐
-│  Rust Core       │  Wallet logic (existing backend)
+│  Rust Core       │  Wallet logic (IronCore)
+└────────┬─────────┘
+         │
+┌────────┴─────────┐
+│  IronGuard-AI    │  Security layer
 └──────────────────┘
 ```
 
 ## Integration
 
-Will connect to the existing Rust backend:
-- Repository: [Rust-Blockchain-Secure-Wallet](https://github.com/DarkCrab-Rust/Rust-Blockchain-Secure-Wallet)
-- Integration method: FFI (Foreign Function Interface)
-- Code reuse: ~90% of wallet logic
+Will connect to existing ecosystem:
+- **Backend**: [IronCore](https://github.com/wejfiowej124234/IronCore) via FFI
+- **Security**: [IronGuard-AI](https://github.com/wejfiowej124234/ironguard-ai) for threat detection
+- **Code Reuse**: ~90% of wallet logic from IronCore
 
 ## Development Roadmap
 
@@ -66,7 +87,7 @@ Will connect to the existing Rust backend:
 
 ## Technology Stack
 
-- **Core**: Rust (via FFI from existing backend)
+- **Core**: Rust (via FFI from IronCore)
 - **Vision Pro**: Swift + visionOS SDK
 - **HoloLens**: C# + Unity/MRTK
 - **Android**: Kotlin + ARCore
@@ -85,18 +106,12 @@ Development requires at least one of:
 - Private keys remain in device secure storage
 - Biometric authentication required
 - Transaction confirmation via multiple modalities
-- Integration with IronGuard-AI for threat detection
+- Integration with [IronGuard-AI](https://github.com/wejfiowej124234/ironguard-ai) for threat detection
+- Protected against [77+ attack types](https://github.com/wejfiowej124234/Attack-Defense)
 
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details
-
-## Related Projects
-
-- **Backend**: [Rust-Blockchain-Secure-Wallet](https://github.com/DarkCrab-Rust/Rust-Blockchain-Secure-Wallet)
-- **Mobile**: [IronLink-DApp](https://github.com/DarkCrab-Rust/IronLink-DApp)
-- **Web**: [IronForge](https://github.com/DarkCrab-Rust/IronForge)
-- **AI Security**: [IronGuard-AI](https://github.com/DarkCrab-Rust/ironguard-ai)
 
 ## Contributing
 
@@ -104,4 +119,9 @@ This project is in planning phase. Contributions to architecture design and docu
 
 ## Contact
 
-GitHub Issues: https://github.com/DarkCrab-Rust/IronVault-XR/issues
+- Issues: https://github.com/wejfiowej124234/IronVault-XR/issues
+- Repository: https://github.com/wejfiowej124234/IronVault-XR
+
+---
+
+**Built with ❤️ for the future of Web3**
